@@ -1,0 +1,17 @@
+Data Visulaization
+step 1)Required Installation:
+	1)Python 
+		1.1)Flask
+		1.2)Matplotlib
+		1.3)Numpy
+		1.4)io (if not present)
+
+step 2)Go to terminal 
+	1)Move to directory in which project is presen
+	2)type following command : python Inp.py
+
+step 3)Open Browser
+	1)type the link: http://localhost:2000/
+	2)Enter data and select plot and then proceed 
+
+For Further queries mail at : hpanwar214@gmail.com

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Data Values</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="F:\Atom\Copy\Ani.css">
+</head>
+<body background="https://previews.123rf.com/images/kentoh/kentoh1003/kentoh100300508/6622261-statistics-and-analysis-of-data-as-background.jpg">
+
+<div class="container">
+  <h2><span>Data Compilation</span></h2>
+  <p>Why Us?</p>
+  <ul>
+    <li>Easy To Input Data</li>
+    <li>Variety Of Features Available</li>
+    <li>Represent Your Data In form Of Graphs</li>
+    <li>Carry Out Basic Statistical Operations Such as Mean and Median.</li>
+  </ul>
+  <p>Input The Data You want to be Represented on the Horizontal Axis In the Left Column.</br>
+     Enter the Corresponding Data for the Horizontal axis In the Right column.</p>
+   </br></br>
+  <form  class="form-horizontal" action="http://localhost:2000/final" method="POST" enctype="multipart/form-data">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Title">Graph Title:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Enter Title " name="Title">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Horizontal Axis">Horizontal Axis:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Enter Horizontal Axis Label" name="Horizontal Axis">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Vertical Axis">Vertical Axis:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Enter Vertical Axis Label" name="Vertical Axis">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Horizontal Axis Data">Horizontal Axis Data:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Enter Horizontal Axis Data Seperated By Commas" name="Horizontal Axis Data" required>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Vertical Axis Data">Vertical Axis Data:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" placeholder="Enter Vertical Axis Data Seperated By Commas" name="Vertical Axis Data" required>
+      </div>
+    </div>
+    <div class="form-group">
+           <fieldset>
+          <p>
+             <label class="control-label col-sm-2" for="Make choice">Make Choice:</label>
+             <select name="choice" id = "myList">
+               <option name="choice" value = "Lineplot">Lineplot</option>
+               <option name="choice" value = "Scatter">Scatter</option>
+               <option name="choice" value = "BarGraph">BarGraph</option>
+               <option name="choice" value = "Histogram">Histogram</option>
+              
+             </select>
+          </p>
+       </fieldset>
+    </div>
+
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="Proceed" class="btn btn-default">Proceed</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
